@@ -114,7 +114,7 @@ export default function CustomTripPlanner({ onOpenWhatsApp }) {
                   {[
                     { name: "تركيا (إسطنبول وطرابزون)", icon: "🇹🇷", bg: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=400&q=80" },
                     { name: "الإمارات (دبي وأبوظبي)", icon: "🇦🇪", bg: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=400&q=80" },
-                    { name: "السعودية (برنامج العمرة)", icon: "🕋", bg: "https://images.unsplash.com/photo-1565552070098-0073a8805021?auto=format&fit=crop&w=400&q=80" },
+                    { name: "السعودية (برنامج العمرة)", icon: "🕋", bg: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=400&q=80" },
                     { name: "ماليزيا وجزر لنكاوي", icon: "🇲🇾", bg: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=400&q=80" },
                     { name: "جورجيا والجبال", icon: "🇬🇪", bg: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=400&q=80" },
                     { name: "دول أوروبا والشنغن", icon: "🇪🇺", bg: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=400&q=80" }

@@ -33,7 +33,7 @@ export default function Hero({ onSearch, onOpenWhatsApp }) {
     <section id="hero" className="relative min-h-[94vh] pt-32 pb-20 flex items-center justify-center overflow-hidden brand-bg-gradient">
       
       {/* Dynamic Visual Background Layer */}
-      <div className="absolute inset-0 z-0 opacity-25 bg-[url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center"></div>
+      <div className="absolute inset-0 z-0 opacity-25 bg-[url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=75')] bg-cover bg-center"></div>
       
       {/* Decorative Gradient Overlay */}
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0B1B3D]/80 via-[#0B1B3D]/95 to-[#0B1B3D]"></div>
