@@ -7,7 +7,6 @@ import VisaServices from './components/VisaServices';
 import CustomTripPlanner from './components/CustomTripPlanner';
 import PackageModal from './components/PackageModal';
 import WhyChooseUs from './components/WhyChooseUs';
-import Testimonials from './components/Testimonials';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
@@ -50,9 +49,6 @@ export default function App() {
 
       {/* Why Choose Sham Tours */}
       <WhyChooseUs />
-
-      {/* Verified Client Testimonials */}
-      <Testimonials />
 
       {/* Contact & Online Agency Details */}
       <ContactSection onOpenWhatsApp={handleOpenWhatsApp} />
