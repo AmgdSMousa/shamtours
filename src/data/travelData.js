@@ -97,7 +97,7 @@ export const tourPackages = [
     title: "رحلة العمرة المميزة (2 سبتمبر - 11 يوم)",
     country: "السعودية",
     category: "العمرة",
-    image: "https://images.unsplash.com/photo-1565552070098-0073a8805021?auto=format&fit=crop&w=600&q=75",
+    image: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=600&q=75",
     duration: "11 يوم / 10 ليالي",
     location: "مكة المكرمة (الماسة جراند) - المدينة",
     rating: 5.0,

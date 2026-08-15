@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin, Send, ShieldCheck, Heart, Globe, MessageCircle, Us
 
 export default function Footer() {
   return (
-    <footer className="bg-[#050E21] text-slate-400 border-t border-slate-800 text-xs">
+    <footer className="bg-[#050E21] text-slate-300 border-t border-slate-800 text-xs font-medium">
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         
@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-4">
             <Logo size="lg" variant="full" />
-            <p className="text-slate-400 leading-relaxed max-w-sm pt-2">
+            <p className="text-slate-300 leading-relaxed max-w-sm pt-2">
               شركة شام تورز للسياحة والسفر والتأشيرات — وكالة سياحية تعمل بالكامل أونلاين 100% لتنظيم أجمل الرحلات حول العالم، استخراج التأشيرات وحجوزات الطيران أينما كنت.
             </p>
             
@@ -105,7 +105,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500">
+        <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400 font-medium">
           <p>© {new Date().getFullYear()} شام تورز (Sham Tours) — جميع الحقوق محفوظة.</p>
           <div className="flex items-center gap-1">
             <span>صُمم بإتقان وشغف لشركة</span>

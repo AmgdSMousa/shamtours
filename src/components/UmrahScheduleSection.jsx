@@ -98,7 +98,7 @@ export default function UmrahScheduleSection({ onOpenWhatsApp }) {
                     <span className="text-xs font-bold text-slate-300">{trip.currency}</span>
                   </div>
                   {trip.originalPrice > trip.price && (
-                    <span className="text-xs text-slate-500 line-through block">
+                    <span className="text-xs text-slate-400 font-semibold line-through block opacity-85">
                       {trip.originalPrice.toLocaleString()} جنيه
                     </span>
                   )}
