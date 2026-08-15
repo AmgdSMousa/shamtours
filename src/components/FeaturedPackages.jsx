@@ -143,11 +143,20 @@ export default function FeaturedPackages({ onSelectPackage, onOpenWhatsApp }) {
                   {/* Pricing & CTA */}
                   <div className="border-t border-slate-700/80 pt-4 flex items-center justify-between">
                     <div>
-                      <span className="text-[11px] text-slate-400 block">يبدأ السعر من</span>
-                      <div className="flex items-baseline gap-1">
-                        <span className="text-2xl font-black text-amber-400">{pkg.price.toLocaleString()}</span>
-                        <span className="text-xs font-bold text-slate-300">{pkg.currency}</span>
-                      </div>
+                      {pkg.price ? (
+                        <>
+                          <span className="text-[11px] text-slate-400 block">يبدأ السعر من</span>
+                          <div className="flex items-baseline gap-1">
+                            <span className="text-2xl font-black text-amber-400">{pkg.price.toLocaleString()}</span>
+                            <span className="text-xs font-bold text-slate-300">{pkg.currency}</span>
+                          </div>
+                        </>
+                      ) : (
+                        <div>
+                          <span className="text-[11px] text-slate-400 block">تكلفة الحزمة</span>
+                          <span className="text-sm font-bold text-amber-400">تواصل لمعرفة السعر</span>
+                        </div>
+                      )}
                     </div>
 
                     <div className="flex items-center gap-2">
@@ -165,7 +174,7 @@ export default function FeaturedPackages({ onSelectPackage, onOpenWhatsApp }) {
                       <motion.button
                         whileHover={{ scale: 1.04 }}
                         whileTap={{ scale: 0.96 }}
-                        onClick={() => onOpenWhatsApp(`حجز رحلة: ${pkg.title} بسعر ${pkg.price} ${pkg.currency}`)}
+                        onClick={() => onOpenWhatsApp(pkg.price ? `حجز رحلة: ${pkg.title} بسعر ${pkg.price} ${pkg.currency}` : `استفسار عن سعر وبرنامج رحلة: ${pkg.title}`)}
                         className="gold-btn text-slate-950 font-bold text-xs px-3.5 py-2.5 rounded-xl flex items-center gap-1.5 shadow-md cursor-pointer"
                         aria-label={`احجز رحلة ${pkg.title} عبر الواتساب`}
                       >

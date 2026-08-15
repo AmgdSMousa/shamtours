@@ -127,8 +127,8 @@ export const tourPackages = [
     rating: 4.9,
     reviewsCount: 142,
     badge: "الأكثر مبيعاً 🔥",
-    price: 32500,
-    currency: "جنيه",
+    price: null,
+    currency: "",
     includes: ["طيران دولي مباشر", "فندق 5 نجوم شامل الإفطار", "جولة البوسفور الخاصة", "سيارة مع سائق خاص", "تأمين سفر"],
     description: "استمتع بإقامة فاخرة في إسطنبول التاريخية مع رحلات يومية إلى سبانجا، بورصة الخضراء، ورحلة يخت خاصة في مضيق البوسفور.",
     itinerary: [
@@ -152,8 +152,8 @@ export const tourPackages = [
     rating: 4.8,
     reviewsCount: 98,
     badge: "فخامة وشهر عسل ✨",
-    price: 29000,
-    currency: "جنيه",
+    price: null,
+    currency: "",
     includes: ["إقامة فندق 5 نجوم مطل", "تذاكر قمة برج خليفة", "رحلة سفاري صحراوية بالعشاء", "جولة في أطلنطس أكوافنتشر", "تأشيرة دخول مجانية"],
     description: "تجربة ساحرة في عاصمة الفخامة العالمية دبي! تضمن إقامة في أرقى الفنادق ورحلات استكشافية لمعالم دبي المستقبليّة.",
     itinerary: [
@@ -175,8 +175,8 @@ export const tourPackages = [
     rating: 4.9,
     reviewsCount: 110,
     badge: "طبيعة وشواطئ 🌴",
-    price: 57500,
-    currency: "جنيه",
+    price: null,
+    currency: "",
     includes: ["طيران دولي + طيران داخلي بين الجزر", "منتجعات 5 نجوم على البحر", "جولات تلفريك لنكاوي وجزر المرجان", "سيارات خاصة طوال الجولة"],
     description: "استمتع بالجمال الاستوائي الشاطئي والغابات المطيرة في ماليزيا مع إقامة في أرقى الفنادق والمنتجعات.",
     itinerary: [
@@ -197,8 +197,8 @@ export const tourPackages = [
     rating: 4.7,
     reviewsCount: 86,
     badge: "طبيعة ومغامرة 🏔️",
-    price: 24500,
-    currency: "جنيه",
+    price: null,
+    currency: "",
     includes: ["إقامة 4 نجوم ديلوكس", "جولات جبال القوقاز الكبرى", "سيارة دفع رباعي خاصة", "وجبات الإفطار اليومية", "شريحة إنترنت مجانية"],
     description: "اكتشف روعة جبال القوقاز والشواطئ اللطيفة على البحر الأسود في جورجيا بتكلفة ممتازة وخدمة متكاملة.",
     itinerary: [
@@ -219,8 +219,8 @@ export const tourPackages = [
     rating: 4.9,
     reviewsCount: 75,
     badge: "الأكثر تميزاً 🏛️",
-    price: 94500,
-    currency: "جنيه",
+    price: null,
+    currency: "",
     includes: ["استخرج فيزا شنغن مجاناً مع العرض", "قطارات سريعة بين الدول", "فنادق 4 و 5 نجوم مركزية", "تذاكر برج ايفل وجبال الألب"],
     description: "رحلة الحلم الأوروبي! تنقل بين أنوار باريس، طبيعة سويسرا الخيالية، وعراقة المدن الإيطالية المذهلة.",
     itinerary: [
@@ -238,7 +238,7 @@ export const visaServices = [
     country: "تأشيرة شنغن (أوروبا)",
     flag: "🇪🇺",
     processingTime: "7 - 14 يوم عمل",
-    price: "7,500 ج.م",
+    price: "تواصل لمعرفة السعر",
     validity: "حسب السفارة (من شهر إلى سنة)",
     requirements: [
       "جواز سفر ساري المفعول لمدة لا تقل عن 6 أشهر",
@@ -255,7 +255,7 @@ export const visaServices = [
     country: "تأشيرة الإمارات العربية المتحدة",
     flag: "🇦🇪",
     processingTime: "24 - 48 ساعة فقط",
-    price: "4,750 ج.م",
+    price: "تواصل لمعرفة السعر",
     validity: "30 يوم / 60 يوم (سياحية)",
     requirements: [
       "صورة جواز السفر واضحة وملونة",
@@ -269,7 +269,7 @@ export const visaServices = [
     country: "تأشيرة تركيا (E-Visa / ملصق)",
     flag: "🇹🇷",
     processingTime: "24 ساعة (إلكترونية) / 5 أيام (سفارة)",
-    price: "3,000 ج.م",
+    price: "تواصل لمعرفة السعر",
     validity: "180 يوم مع إقامة 30 يوم",
     requirements: [
       "صورة جواز السفر",
@@ -283,7 +283,7 @@ export const visaServices = [
     country: "تأشيرة المملكة المتحدة (بريطانيا ETA)",
     flag: "🇬🇧",
     processingTime: "3 - 5 أيام عمل",
-    price: "6,000 ج.م",
+    price: "تواصل لمعرفة السعر",
     validity: "سنتين متعددة الدخول",
     requirements: [
       "صورة جواز السفر إلكترونية",
@@ -297,7 +297,7 @@ export const visaServices = [
     country: "تأشيرة أمريكا (B1/B2)",
     flag: "🇺🇸",
     processingTime: "تحديد موعد مقابلة قريب + استشارة",
-    price: "11,000 ج.م",
+    price: "تواصل لمعرفة السعر",
     validity: "5 سنوات متعددة الدخول",
     requirements: [
       "تعبئة نموذج DS-160 باحترافية عالية",
@@ -312,7 +312,7 @@ export const visaServices = [
     country: "تأشيرة السعودية والعمرة",
     flag: "🇸🇦",
     processingTime: "ساعات معدودة (إلكترونية)",
-    price: "5,500 ج.م",
+    price: "تواصل لمعرفة السعر",
     validity: "سنة كاملة متعددة الدخول مع عمرة",
     requirements: [
       "جواز سفر ساري 6 أشهر",
@@ -328,7 +328,7 @@ export const testimonials = [
     id: 1,
     name: "م. أحمد الشامي",
     role: "مسافر إلى إسطنبول",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=75",
     comment: "من أفضل شركات السياحة أونلاين! سرعة فائقة في الحجز واستخراج تذاكر الطيران، والسائق كان بانتظارنا بالمطار.",
     rating: 5,
     trip: "رحلة إسطنبول وبورصة"
@@ -337,7 +337,7 @@ export const testimonials = [
     id: 2,
     name: "د. ريم درويش",
     role: "رحلة عائلية إلى دبي",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80",
+    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=75",
     comment: "خدمة التأشيرة الإماراتية تمت عبر الواتساب خلال 24 ساعة فقط! سهولة فائقة ودعم متواصل.",
     rating: 5,
     trip: "تأشيرة دبي أونلاين"
@@ -346,7 +346,7 @@ export const testimonials = [
     id: 3,
     name: "أ. خالد النجار",
     role: "برنامج العمرة VIP",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=75",
     comment: "رحلة العمرة لشهر سبتمبر كانت ميسرة جداً، طيران إير كايرو مباشر وفندق الماسة جراند كان ممتازاً وقريباً جداً من الحرم.",
     rating: 5,
     trip: "برنامج العمرة الروحاني"

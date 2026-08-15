@@ -56,7 +56,9 @@ export default function PackageModal({ packageData, onClose, onOpenWhatsApp }) {
 
               <div className="bg-slate-950/90 border border-amber-500/40 px-4 py-2 rounded-2xl text-center">
                 <span className="text-[10px] text-slate-400 block">السعر للشخص</span>
-                <span className="text-xl font-black text-amber-400">{packageData.price.toLocaleString()} {packageData.currency}</span>
+                <span className="text-lg sm:text-xl font-black text-amber-400">
+                  {packageData.price ? `${packageData.price.toLocaleString()} ${packageData.currency}` : "تواصل لمعرفة السعر"}
+                </span>
               </div>
             </div>
           </div>
@@ -151,7 +153,7 @@ export default function PackageModal({ packageData, onClose, onOpenWhatsApp }) {
               whileTap={{ scale: 0.97 }}
               onClick={() => {
                 onClose();
-                onOpenWhatsApp(`حجز رحلة: ${packageData.title} بسعر ${packageData.price} ${packageData.currency}`);
+                onOpenWhatsApp(packageData.price ? `حجز رحلة: ${packageData.title} بسعر ${packageData.price} ${packageData.currency}` : `استفسار وحجز رحلة: ${packageData.title}`);
               }}
               className="gold-btn text-slate-950 font-black text-sm px-6 py-3 rounded-xl flex items-center gap-2 shadow-xl cursor-pointer"
             >

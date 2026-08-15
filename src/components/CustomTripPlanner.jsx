@@ -36,7 +36,6 @@ export default function CustomTripPlanner({ onOpenWhatsApp }) {
 👥 عدد المسافرين: ${travelersCount}
 ✈️ الطيران: ${includeFlight ? 'مطلوب' : 'غير مطلوب'}
 🚗 سيارة مع سائق: ${includeDriver ? 'مطلوب' : 'غير مطلوب'}
-💰 التكلفة التقديرية: ~${calculateEstimatedPrice().toLocaleString()} جنيه
 
 أرجو تزويدي بعرض السعر والتفاصيل النهائية.`;
     onOpenWhatsApp(message);
@@ -316,20 +315,13 @@ export default function CustomTripPlanner({ onOpenWhatsApp }) {
                   </div>
                 </div>
 
-                {/* Estimated Result Card */}
+                {/* Custom Plan Inquiry Card */}
                 <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-amber-500/50 p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-right shadow-xl">
                   <div>
-                    <span className="text-xs text-amber-400 font-bold block">التكلفة الإجمالية التقديرية لحزمتك:</span>
-                    <div className="flex items-baseline justify-center sm:justify-start gap-2 mt-1">
-                      <motion.span 
-                        key={calculateEstimatedPrice()}
-                        initial={{ scale: 1.15, color: "#F59E0B" }}
-                        animate={{ scale: 1, color: "#FFFFFF" }}
-                        className="text-3xl font-black text-white"
-                      >
-                        {calculateEstimatedPrice().toLocaleString()} جنيه
-                      </motion.span>
-                      <span className="text-xs text-slate-400">تقريبياً (تشمل الإقامة والخدمات)</span>
+                    <span className="text-xs text-amber-400 font-bold block">احصل على أفضل سعر لحزمتك المصممة:</span>
+                    <div className="mt-1">
+                      <span className="text-xl sm:text-2xl font-black text-white block">عرض سعر مخصص ومباشر مجاناً</span>
+                      <span className="text-xs text-slate-300">سيتواصل معك مستشار شام تورز بالخصومات المتاحة</span>
                     </div>
                   </div>
 
