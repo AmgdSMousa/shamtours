@@ -1,0 +1,14 @@
+# Sham Tours
+
+> Sham Tours (شام تورز) — Official online travel agency for tourist packages, Umrah trips, custom itineraries, and visa applications.
+
+## Main Services & Booking
+
+- [Official Platform](https://shamtours.am8ed.site): Main online booking portal for tourist packages and Umrah schedules.
+- [Custom Trip Planner](https://shamtours.am8ed.site/#planner): Interactive custom itinerary generator for individuals and families.
+- [Visa Services](https://shamtours.am8ed.site/#visa): Tourist and transit visa issuance and application processing.
+
+## Contact & Customer Desk
+
+- [WhatsApp Desk](https://wa.me/201019688320): Instant WhatsApp support for reservations and inquiries.
+- [Main Portfolio](https://am8ed.site): Developer portfolio of Amged Sayed.

@@ -103,8 +103,9 @@ export default function ContactSection({ onOpenWhatsApp }) {
             <form onSubmit={handleSubmitInquiry} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="text-xs font-medium text-slate-300 block mb-1">الاسم الكامل</label>
+                  <label htmlFor="contact-name" className="text-xs font-medium text-slate-300 block mb-1">الاسم الكامل</label>
                   <input 
+                    id="contact-name"
                     type="text" 
                     required
                     placeholder="أدخل اسمك الكريم"
@@ -115,8 +116,9 @@ export default function ContactSection({ onOpenWhatsApp }) {
                 </div>
 
                 <div>
-                  <label className="text-xs font-medium text-slate-300 block mb-1">رقم الواتساب / الهاتف</label>
+                  <label htmlFor="contact-phone" className="text-xs font-medium text-slate-300 block mb-1">رقم الواتساب / الهاتف</label>
                   <input 
+                    id="contact-phone"
                     type="tel" 
                     required
                     placeholder="+20 106 389 8530"
@@ -128,8 +130,9 @@ export default function ContactSection({ onOpenWhatsApp }) {
               </div>
 
               <div>
-                <label className="text-xs font-medium text-slate-300 block mb-1">الخدمة المطلوبة</label>
+                <label htmlFor="contact-service" className="text-xs font-medium text-slate-300 block mb-1">الخدمة المطلوبة</label>
                 <select 
+                  id="contact-service"
                   value={formData.service}
                   onChange={(e) => setFormData({...formData, service: e.target.value})}
                   className="w-full bg-slate-800 border border-slate-700 rounded-xl p-3 text-xs text-white focus:border-amber-400 focus:outline-none cursor-pointer"

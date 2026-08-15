@@ -130,10 +130,11 @@ export default function Hero({ onSearch, onOpenWhatsApp }) {
                   className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"
                 >
                   <div className="bg-slate-800/80 border border-slate-700/80 rounded-xl p-3 hover:border-amber-400 transition-colors">
-                    <label className="text-[11px] text-slate-400 block mb-1 font-medium">مغادرة من</label>
+                    <label htmlFor="hero-origin" className="text-[11px] text-slate-400 block mb-1 font-medium">مغادرة من</label>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4 text-amber-400 flex-shrink-0" />
                       <select 
+                        id="hero-origin"
                         value={origin} 
                         onChange={(e) => setOrigin(e.target.value)}
                         className="bg-transparent text-white text-sm font-semibold focus:outline-none w-full cursor-pointer"
@@ -149,10 +150,11 @@ export default function Hero({ onSearch, onOpenWhatsApp }) {
                   </div>
 
                   <div className="bg-slate-800/80 border border-slate-700/80 rounded-xl p-3 hover:border-amber-400 transition-colors">
-                    <label className="text-[11px] text-slate-400 block mb-1 font-medium">الوجهة إلى</label>
+                    <label htmlFor="hero-dest" className="text-[11px] text-slate-400 block mb-1 font-medium">الوجهة إلى</label>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4 text-amber-400 flex-shrink-0" />
                       <select 
+                        id="hero-dest"
                         value={destination} 
                         onChange={(e) => setDestination(e.target.value)}
                         className="bg-transparent text-white text-sm font-semibold focus:outline-none w-full cursor-pointer"
@@ -168,10 +170,11 @@ export default function Hero({ onSearch, onOpenWhatsApp }) {
                   </div>
 
                   <div className="bg-slate-800/80 border border-slate-700/80 rounded-xl p-3 hover:border-amber-400 transition-colors">
-                    <label className="text-[11px] text-slate-400 block mb-1 font-medium">تاريخ السفر</label>
+                    <label htmlFor="hero-date" className="text-[11px] text-slate-400 block mb-1 font-medium">تاريخ السفر</label>
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4 text-amber-400 flex-shrink-0" />
                       <input 
+                        id="hero-date"
                         type="date" 
                         value={travelDate}
                         onChange={(e) => setTravelDate(e.target.value)}
@@ -181,10 +184,11 @@ export default function Hero({ onSearch, onOpenWhatsApp }) {
                   </div>
 
                   <div className="bg-slate-800/80 border border-slate-700/80 rounded-xl p-3 hover:border-amber-400 transition-colors">
-                    <label className="text-[11px] text-slate-400 block mb-1 font-medium">المسافرين والدرجة</label>
+                    <label htmlFor="hero-passengers" className="text-[11px] text-slate-400 block mb-1 font-medium">المسافرين والدرجة</label>
                     <div className="flex items-center gap-2">
                       <Users className="w-4 h-4 text-amber-400 flex-shrink-0" />
                       <select 
+                        id="hero-passengers"
                         value={passengers} 
                         onChange={(e) => setPassengers(e.target.value)}
                         className="bg-transparent text-white text-sm font-semibold focus:outline-none w-full cursor-pointer"

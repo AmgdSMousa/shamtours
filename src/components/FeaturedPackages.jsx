@@ -86,6 +86,10 @@ export default function FeaturedPackages({ onSelectPackage, onOpenWhatsApp }) {
                   <img 
                     src={pkg.image} 
                     alt={pkg.title}
+                    width="378"
+                    height="240"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
@@ -153,6 +157,7 @@ export default function FeaturedPackages({ onSelectPackage, onOpenWhatsApp }) {
                         onClick={() => onSelectPackage(pkg)}
                         className="p-2.5 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-200 transition-colors cursor-pointer"
                         title="عرض البرنامج كاملاً"
+                        aria-label={`عرض تفاصيل رحلة ${pkg.title}`}
                       >
                         <Eye className="w-4 h-4" />
                       </motion.button>
@@ -162,6 +167,7 @@ export default function FeaturedPackages({ onSelectPackage, onOpenWhatsApp }) {
                         whileTap={{ scale: 0.96 }}
                         onClick={() => onOpenWhatsApp(`حجز رحلة: ${pkg.title} بسعر ${pkg.price} ${pkg.currency}`)}
                         className="gold-btn text-slate-950 font-bold text-xs px-3.5 py-2.5 rounded-xl flex items-center gap-1.5 shadow-md cursor-pointer"
+                        aria-label={`احجز رحلة ${pkg.title} عبر الواتساب`}
                       >
                         <MessageCircle className="w-3.5 h-3.5 fill-slate-950" />
                         <span>احجز الآن</span>
