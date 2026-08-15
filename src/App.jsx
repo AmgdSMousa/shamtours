@@ -26,7 +26,7 @@ export default function App() {
       });
 
       if (typeof window.gtag === 'function') {
-        window.gtag('event', 'conversion', { 'send_to': 'AW-18384004639' });
+        window.gtag('event', 'conversion', { 'send_to': 'AW-18384004639/G3HNCPerp-IeEJ_Nk5E' });
         window.gtag('event', 'contact', { event_category: 'WhatsApp', event_label: customMessage });
       }
     }
