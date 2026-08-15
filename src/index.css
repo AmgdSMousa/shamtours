@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Tajawal', 'Readex Pro', system-ui, -apple-system, sans-serif;
+  }
+  
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom luxury theme styles */
+.brand-gradient-text {
+  background: linear-gradient(135deg, #F59E0B 0%, #DA9616 50%, #B47B10 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-bg-gradient {
+  background: linear-gradient(135deg, #0B1B3D 0%, #0F2756 50%, #08142D 100%);
+}
+
+.gold-bg-gradient {
+  background: linear-gradient(135deg, #E5A93C 0%, #DA9616 50%, #C58B12 100%);
+}
+
+.gold-btn {
+  background: linear-gradient(135deg, #E5A93C 0%, #DA9616 100%);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gold-btn:hover {
+  background: linear-gradient(135deg, #F5B74A 0%, #E5A93C 100%);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 30px -5px rgba(218, 150, 22, 0.45);
+}
+
+.glass-nav {
+  background: rgba(11, 27, 61, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+}
+
+.glass-dark {
+  background: rgba(15, 39, 86, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(229, 169, 60, 0.15);
+}
+
+/* Shimmer Light Effect */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer-badge {
+  background: linear-gradient(90deg, rgba(218,150,22,0.1) 0%, rgba(218,150,22,0.3) 50%, rgba(218,150,22,0.1) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* Glow Pulses */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 15px rgba(218, 150, 22, 0.2); }
+  50% { box-shadow: 0 0 30px rgba(218, 150, 22, 0.5); }
+}
+
+.glow-on-hover:hover {
+  animation: glowPulse 2s infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1B3D;
+}
+::-webkit-scrollbar-thumb {
+  background: #DA9616;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5A93C;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
