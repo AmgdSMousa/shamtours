@@ -9,6 +9,22 @@ export default function ContactSection({ onOpenWhatsApp }) {
   const handleSubmitInquiry = (e) => {
     e.preventDefault();
     setSubmitted(true);
+
+    if (typeof window !== 'undefined') {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ 
+        event: 'form_submission', 
+        form_id: 'contact_form',
+        service_requested: formData.service,
+        client_name: formData.name
+      });
+
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'conversion', { 'send_to': 'AW-18384004639' });
+        window.gtag('event', 'generate_lead', { event_category: 'Form', event_label: formData.service });
+      }
+    }
+
     setTimeout(() => {
       onOpenWhatsApp(`استفسار جديد عبر الموقع من: ${formData.name} - الخدمة المطلوبة: ${formData.service} - ملاحظات: ${formData.notes}`);
       setSubmitted(false);

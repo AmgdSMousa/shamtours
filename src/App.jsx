@@ -15,8 +15,22 @@ import { contactDetails } from './data/travelData';
 export default function App() {
   const [selectedPackage, setSelectedPackage] = useState(null);
 
-  // Direct WhatsApp opener utility with pre-filled message
+  // Direct WhatsApp opener utility with pre-filled message & conversion tracking
   const handleOpenWhatsApp = (customMessage = "") => {
+    // Fire tracking event for Google Tag Manager & Google Ads
+    if (typeof window !== 'undefined') {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ 
+        event: 'whatsapp_click', 
+        message: customMessage || 'General Inquiry' 
+      });
+
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'conversion', { 'send_to': 'AW-18384004639' });
+        window.gtag('event', 'contact', { event_category: 'WhatsApp', event_label: customMessage });
+      }
+    }
+
     const defaultText = customMessage || "مرحباً شام تورز، أود الاستفسار عن برامج السياحة والتأشيرات المتاحة لديكم.";
     const encodedText = encodeURIComponent(defaultText);
     const whatsappUrl = `https://wa.me/${contactDetails.whatsapp.replace('+', '')}?text=${encodedText}`;
