@@ -1,0 +1,19 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://shamtours.am8ed.site/api",
+      "service-desc": [
+        {
+          "href": "https://shamtours.am8ed.site/.well-known/openapi.json",
+          "type": "application/json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://shamtours.am8ed.site/llms-full.txt",
+          "type": "text/markdown"
+        }
+      ]
+    }
+  ]
+}

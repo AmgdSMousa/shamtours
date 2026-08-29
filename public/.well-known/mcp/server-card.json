@@ -1,0 +1,10 @@
+{
+  "serverInfo": {
+    "name": "shamtours-travel-mcp",
+    "version": "1.0.0",
+    "description": "SEP-1649 MCP Server Card for Sham Tours Travel & Umrah Platform"
+  },
+  "capabilities": {
+    "tools": true
+  }
+}

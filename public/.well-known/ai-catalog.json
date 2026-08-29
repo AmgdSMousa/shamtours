@@ -1,0 +1,32 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "domain": "shamtours.am8ed.site",
+    "name": "Sham Tours Travel & Umrah Platform"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:shamtours.am8ed.site:docs:llms-full",
+      "id": "urn:air:shamtours.am8ed.site:docs:llms-full",
+      "displayName": "Sham Tours Full Travel Documentation",
+      "type": "text/markdown",
+      "url": "https://shamtours.am8ed.site/llms-full.txt",
+      "representativeQueries": [
+        "What are the Umrah packages for Sham Tours?",
+        "How to book Umrah flights from Cairo to Jeddah?",
+        "What hotels are available in Makkah and Madinah?"
+      ]
+    },
+    {
+      "identifier": "urn:air:shamtours.am8ed.site:mcp:travel-server",
+      "id": "urn:air:shamtours.am8ed.site:mcp:travel-server",
+      "displayName": "Sham Tours Travel MCP Server",
+      "type": "application/json",
+      "url": "https://shamtours.am8ed.site/.well-known/mcp.json",
+      "representativeQueries": [
+        "Connect to Sham Tours travel booking MCP server",
+        "Inspect Umrah packages via MCP"
+      ]
+    }
+  ]
+}

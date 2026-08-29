@@ -1,0 +1,34 @@
+# Sham Tours Travel & Umrah Platform Specification (llms-full.txt)
+
+> Official Agentic Documentation for Sham Tours Travel & Umrah Booking Services.
+
+## Executive Overview
+
+Sham Tours (شركة شام تورز للسياحة برامج العمرة) is a leading Egyptian travel agency specializing in custom Umrah packages, August & September spiritual pilgrimages, luxury hotel bookings in Makkah & Madinah, flight reservations, and tourist visa processing.
+
+- **Official Website**: https://shamtours.am8ed.site
+- **Parent Entity**: Amged Sayed Digital Ecosystem (https://am8ed.site)
+- **Primary Contact**: Direct WhatsApp Desk (+201000000000) & Contact Form
+- **Headquarters**: Cairo, Egypt
+
+## Featured Travel & Pilgrimage Services
+
+### 1. August & September Umrah Packages (برامج عمرة أغسطس وسبتمبر)
+- Custom Umrah package planning with flexible duration options (10, 14, or 21 days).
+- Direct flights with EgyptAir & Saudia Airlines from Cairo International Airport (CAI) to Jeddah (JED) or Madinah (MED).
+- 5-Star and 4-Star hotel accommodations within walking distance to Al-Masjid an-Nabawi and Al-Masjid al-Haram in Makkah.
+- Dedicated spiritual guides, religious supervisors, and air-conditioned VIP bus transfers between cities.
+
+### 2. Custom Trip Planner (تخصيص برامج السياحة والرحلات)
+- Tailored holiday itineraries across Egypt, Saudi Arabia, and international destinations.
+- Group rates, family discounts, and VIP transport reservations.
+
+### 3. Tourist & Pilgrimage Visa Application (استخراج التأشيرات)
+- Express Saudi electronic tourist visa (e-Visa) & Umrah visa processing.
+- Passport validation, insurance issuance, and document verification.
+
+## Technology Stack
+
+- **Frontend**: React 19, Vite 8, TailwindCSS v4, Framer Motion
+- **Analytics & Conversion**: Google Tag Manager (`GTM-MD587CKT`), Google Ads Conversion Actions (`AW-18384004639`)
+- **API Architecture**: REST APIs, JSON-LD Structured Data (`TravelAgency` & `TourReservation`)

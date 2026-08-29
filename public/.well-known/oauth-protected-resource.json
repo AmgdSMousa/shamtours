@@ -1,0 +1,20 @@
+{
+  "resource": "https://shamtours.am8ed.site",
+  "authorization_servers": [
+    "https://shamtours.am8ed.site"
+  ],
+  "scopes_supported": [
+    "read:packages",
+    "read:tours"
+  ],
+  "bearer_methods_supported": [
+    "header"
+  ],
+  "agent_auth": {
+    "register_uri": "https://shamtours.am8ed.site/auth.md",
+    "supported_identity_types": ["agent", "user"],
+    "credential_types": ["bearer_token", "none"],
+    "claim_uri": "https://shamtours.am8ed.site/auth.md#agent-registration",
+    "revocation_uri": "https://shamtours.am8ed.site/auth.md#revocation"
+  }
+}

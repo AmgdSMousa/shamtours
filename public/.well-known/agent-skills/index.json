@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agenticresourcediscovery.org/schemas/v0.2.0/agent-skills.json",
+  "skills": [
+    {
+      "name": "shamtours-umrah-booking",
+      "type": "travel-reservation",
+      "description": "Inspect and book August & September Umrah packages and luxury hotel stays in Makkah & Madinah",
+      "url": "https://shamtours.am8ed.site/llms-full.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

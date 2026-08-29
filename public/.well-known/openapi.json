@@ -1,0 +1,20 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Sham Tours Travel & Umrah API",
+    "version": "1.0.0",
+    "description": "API endpoints for Sham Tours Umrah package inquiries and trip planning"
+  },
+  "paths": {
+    "/api/umrah-packages": {
+      "get": {
+        "summary": "Get Umrah pilgrimage schedules and hotel packages",
+        "responses": {
+          "200": {
+            "description": "Successful response with Umrah package data"
+          }
+        }
+      }
+    }
+  }
+}
